@@ -1,6 +1,6 @@
 <h1>New user</h1>
 
-<%= turbo_frame_tag "modal" do %>
+<%= render "shared/modal" do %>
   <%= render "form", user: @user %>
 <% end %>
 
