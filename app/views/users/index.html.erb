@@ -4,10 +4,10 @@
 
 <%= turbo_stream_from "users" %>
 
-<div id="users">
-  <ul>
+<div>
+  <ul id="users">
     <%= render @users %>
   </ul>
 </div>
 
-<%= link_to "New user", new_user_path %>
+<%= link_to "New user", new_user_path, data: { "turbo-frame": "modal" } %>
