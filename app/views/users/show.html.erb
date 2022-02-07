@@ -1,10 +1,30 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @user %>
-
-<div>
-  <%= link_to "Edit this user", edit_user_path(@user) %> |
-  <%= link_to "Back to users", users_path %>
-
-  <%= button_to "Destroy this user", @user, method: :delete %>
-</div>
+<%= render "shared/modal" do %>
+  <div id="<%= dom_id @user %>" class="user__show">
+    <p>
+      <strong>
+        Name
+      </strong>
+      :
+      <%= @user.name %>
+    </p>
+    <p>
+      <strong>
+        Last Name
+      </strong>
+      :
+      <%= @user.last_name %>
+    </p>
+    <p>
+      <strong>
+        Email
+      </strong>
+      :
+      <%= @user.email %>
+    </p>
+    <%= link_to "Edit this user", edit_user_path(@user), data: { "turbo-frame": "modal" } %>
+    <%= button_to "Destroy this user", @user, method: :delete %>
+    <%= link_to "Back to users", users_path %>
+  </div>
+<% end %>

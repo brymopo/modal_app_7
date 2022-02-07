@@ -2,13 +2,12 @@
 
 <h1>Users</h1>
 
-<div id="users">
-  <% @users.each do |user| %>
-    <%= render user %>
-    <p>
-      <%= link_to "Show this user", user %>
-    </p>
-  <% end %>
+<%= turbo_stream_from "users" %>
+
+<div>
+  <ul id="users">
+    <%= render @users %>
+  </ul>
 </div>
 
-<%= link_to "New user", new_user_path %>
+<%= link_to "New user", new_user_path, data: { "turbo-frame": "modal" } %>

@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple project for practice creating a modal on rails 7 with Hotwire, TurboJs and Stimulus Js.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby 3.0.2
 
-* System dependencies
+* Rails 7.0.1
 
-* Configuration
+* Node v16.13.2
 
-* Database creation
+## INSTRUCTIONS
 
-* Database initialization
+1. Clone repository
 
-* How to run the test suite
+2. `cd ./modal_app_7`
 
-* Services (job queues, cache servers, search engines, etc.)
+3. `bundle install`
 
-* Deployment instructions
-
-* ...
+4. `bin/dev` to start the server

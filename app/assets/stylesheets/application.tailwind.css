@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.modal{
+  width: 35vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  border-left: 1px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
