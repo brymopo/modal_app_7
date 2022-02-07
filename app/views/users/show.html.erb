@@ -23,8 +23,8 @@
       :
       <%= @user.email %>
     </p>
-    <%= link_to "Edit this user", edit_user_path(@user), data: { "turbo-frame": "modal" } %>
-    <%= button_to "Destroy this user", @user, method: :delete %>
-    <%= link_to "Back to users", users_path %>
+    <%= link_to "Edit this user", edit_user_path(@user), data: { "turbo-frame": "modal" }, class: "button" %>
+    <%= button_to "Destroy this user", @user, method: :delete, class: "button" %>
+    <%= link_to "Back to users", users_path, class: "button" %>
   </div>
 <% end %>
