@@ -12,16 +12,8 @@
   z-index: 99;
   border-left: 1px solid blue;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   box-shadow: -5px 0px 0px rgba(93, 93, 93, 0.5);
-}
-
-.button{
-  border: 2px solid green;
-  color: white;
-  background-color: green;
-  border-radius: 3px;
-  margin: 20px 0px;
-  padding: 2px;
 }
